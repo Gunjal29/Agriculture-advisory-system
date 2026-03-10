@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.secret_key = "secret123"
 
-API_KEY = "f838ccb51099617f6ce5f3400e986097"
+API_KEY = "f838ccb51099617f6ce5f3400e986097-"
 
 db = mysql.connector.connect(
     host="localhost",
