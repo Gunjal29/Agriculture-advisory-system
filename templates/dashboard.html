@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Farmer Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-success">
+
+<div class="container-fluid">
+
+<span class="navbar-brand">🌾 Agro Advisory</span>
+
+<div>
+
+<a href="/profile" class="btn btn-light me-2">Profile</a>
+
+
+</div>
+
+</div>
+
+</nav>
+
+{% include 'navbar.html' %}
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">Welcome {{username}}</h2>
+
+<div class="row justify-content-center">
+
+<div class="col-md-4">
+
+<div class="card shadow text-center p-4">
+
+<h4>🌱 Crop Recommendation</h4>
+
+<p>Find best crops for your soil</p>
+
+<a href="/crop" class="btn btn-success w-100">Open</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
