@@ -1,0 +1,1 @@
+A web-based Agriculture Advisory System that helps farmers choose the best crops based on soil type, location, and weather conditions. The system also provides fertilizer suggestions and current weather data to assist farmers in making better farming decisions.
