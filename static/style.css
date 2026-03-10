@@ -1,0 +1,95 @@
+body{
+background:#eef7ee;
+font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+}
+
+/* HERO SECTION */
+
+.hero{
+background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+background-size:cover;
+background-position:center;
+height:350px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+animation: fadeIn 2s;
+}
+
+/* NAVBAR LINK SPACING */
+
+.nav-link{
+margin-right:15px;
+font-weight:500;
+}
+
+/* CARD STYLE */
+
+.card{
+border-radius:15px;
+animation: slideUp 1s ease;
+transition:0.3s;
+}
+
+/* CARD HOVER */
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* CROP CARD */
+
+.crop-card:hover{
+transform:scale(1.03);
+transition:0.3s;
+background:#f1fdf4;
+}
+
+/* BUTTON STYLE */
+
+.btn-success{
+background:#2e7d32;
+border:none;
+}
+
+.btn-success:hover{
+background:#1b5e20;
+}
+
+/* FOOTER */
+
+footer{
+background:#1b5e20;
+color:white;
+padding:15px;
+text-align:center;
+margin-top:40px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+}
+to{
+opacity:1;
+}
+}
+
+@keyframes slideUp{
+from{
+transform:translateY(40px);
+opacity:0;
+}
+to{
+transform:translateY(0);
+opacity:1;
+}
+}

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<div class="container">
+
+<a class="navbar-brand" href="/">🌾 Agro Advisory</a>
+
+<div>
+
+<a class="text-white mx-3" href="/">Home</a>
+<a class="text-white mx-3" href="/contact">Contact</a>
+<a class="text-white mx-3" href="/about">About</a>
+
+{% if session.get('username') %}
+<a class="text-white mx-3" href="/profile">Profile</a>
+<a class="text-warning mx-3" href="/logout">Logout</a>
+{% else %}
+<a class="text-white mx-3" href="/login">Login</a>
+{% endif %}
+
+</div>
+
+</div>
+</nav>
