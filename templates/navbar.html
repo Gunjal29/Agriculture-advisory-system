@@ -1,20 +1,48 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-expand-lg navbar-light">
+
 <div class="container">
 
-<a class="navbar-brand" href="/">🌾 Agro Advisory</a>
+<a class="navbar-brand fw-bold" href="/">🌾 Agro Advisory</a>
 
-<div>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+<span class="navbar-toggler-icon"></span>
+</button>
 
-<a class="text-white mx-3" href="/">Home</a>
-<a class="text-white mx-3" href="/contact">Contact</a>
-<a class="text-white mx-3" href="/about">About</a>
+<div class="collapse navbar-collapse justify-content-end" id="navMenu">
+
+<ul class="navbar-nav align-items-center">
+
+<li class="nav-item">
+<a class="nav-link" href="/">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/contact">Contact</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="/about">About</a>
+</li>
 
 {% if session.get('username') %}
-<a class="text-white mx-3" href="/profile">Profile</a>
-<a class="text-warning mx-3" href="/logout">Logout</a>
+
+<li class="nav-item">
+<a class="nav-link" href="/profile">Profile</a>
+</li>
+
+<li class="nav-item">
+<a class="btn btn-success ms-3" href="/logout">Logout</a>
+</li>
+
 {% else %}
-<a class="text-white mx-3" href="/login">Login</a>
+
+<li class="nav-item">
+<a class="btn btn-success ms-3" href="/login">Login</a>
+</li>
+
 {% endif %}
+
+</ul>
 
 </div>
 
